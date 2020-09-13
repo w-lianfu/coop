@@ -1,10 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import '@globalScss/index.scss';
 
 const App = () => {
   return (
     <div>
-      <h2>Coop</h2>
+      <h2>Coop99</h2>
     </div>
   );
 };
