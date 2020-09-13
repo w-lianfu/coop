@@ -20,6 +20,7 @@ module.exports = api => {
       ],
     ],
     plugins: [
+      ['emotion'],
       [
         require.resolve('babel-plugin-named-asset-import'),
         {
