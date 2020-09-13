@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-const AppTheme = () => {
+import ThemeConfig from '@themeConfig/index';
+
+interface IProps {
+  children: ReactNode;
+}
+interface IState {}
+
+const AppTheme = (props: IProps, state: IState) => {
+  const { children } = props;
+
   return (
-    <div>Theme</div>
+    <ThemeProvider theme={ThemeConfig}>{children}</ThemeProvider>
   );
 };
 
